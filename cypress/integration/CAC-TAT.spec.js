@@ -144,7 +144,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     });
 
     it('CN014 - Exibir e esconder as mensagens de sucesso e erro usando o .invoke', () => {
-        cy.get('.success')
+        cy.get('.success');
             .should('not.be.visible')
             .invoke('show')
             .should('be.visible')
