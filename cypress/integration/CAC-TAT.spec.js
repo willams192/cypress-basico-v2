@@ -143,7 +143,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
         cy.contains('Talking About Testing').should('be.visible');
     });
 
-    it('CN014 - Exibir e esconder as mensagens de sucesso e erro usando o .invoke', () => {
+    it('CN014 - Exibir e esconder as mensagens de sucesso e erro', () => {
         cy.get('.success')
             .should('not.be.visible')
             .invoke('show')
@@ -159,5 +159,4 @@ describe('Central de Atendimento ao Cliente TAT', () => {
             .invoke('hide')
             .should('not.be.visible')
     })
-
 });
